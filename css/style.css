@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*todo Link font-family */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200&family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300;1,400&display=swap');
+
+@font-face {
+    font-family: BarlowCondensed-Regular;
+    src: url("../fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf")
+}
+
+
+@font-face {
+    font-family: Quicksand;
+    src: url("../fonts/Quicksand-VariableFont_wght.ttf")
+}
+
+@font-face {
+    font-family: Rye-Regular;
+    src: url("../fonts/Rye/Rye-Regular.ttf")
+}
+
+
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    /* font-family:"Poppins", sans-serif; */
+    font-size: 100%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --font: 'Quicksand', sans-serif;
+    --font-size: 1.2rem;
+    --color-background: #40403F;
+    --text-color: #717170;
+    --text-white: #fff;
+}
+/* body {
+    background: #dfe9f5;
+    margin-left: 100px;
+} */
+
+.container {
+    margin-left: 100px;
+    margin-top: 3rem;
+}
+
+.btn:hover {
+opacity: 0.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table tr {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 3rem;
+}
+
+.table tr,
+.table td {
+    word-break: break-word;
+    width: 3rem;
+    padding: 1rem 0;
+}
+a.btn.primary {
+    margin: 0 10px;
+}
+
+h1.title{
+    padding: 1rem 0;
+    text-transform: uppercase;
+    word-break: break-word;
+    line-height: 4rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+
+nav {
+    font-family: "Poppins", sans-serif;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    Left: 0;
+    background: #fff;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav a {
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.fas {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+nav a:hover {
+    background: #eee;
+}
+
+nav:hover {
+    width: 280px;
+    transition: all 0.5s ease;
+    ;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/** Bảo hành */
+
+.warranty {
+    margin: 10px;
+    background-color: #F5F5F5;
+    border: 1px solid gray;
+}
+
+.location-container,
+.warranty-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.location-title,
+.warranty-title {
+    padding: 1rem 0;
+    text-transform: uppercase;
+    word-break: break-word;
+    line-height: 4rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.warranty-main {
+    line-height: 2rem;
+    margin: 1em 0;
+    padding: 0 3rem;
+    background-color: #F5F5F5;
+}
+
+.warranty-notice {
+    padding: 0 2rem;
+}
+
+.warranty-notice .warranty-link {
+    color: #717170;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.warranty-notice .warranty-link:hover {
+    opacity: 2;
+    color: indigo;
+}
+
+.warranty-hotline {
+    text-align: center;
+    font-size: larger;
+    padding: 10px 0;
+}
+
+.warranty-form {
+    padding-left: 1rem;
+}
+
+.warranty-form .form-group {
+    color: #000;
+    font-weight: 700;
+}
+
+.warranty-form .form-group,
+.warranty-form .form-control {
+    margin: 1rem 0;
+}
+
+.warranty-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.warranty-submit input[type="submit"] {
+    cursor: pointer;
+    font-size: 2rem;
+    width: 8em;
+    border-radius: 30px;
+    height: 4rem;
+    text-align: center;
+    background-color: #2F2E2E;
+    color: var(--text-white);
+    font-family: var(--font-size);
+    border-style: unset;
+}
+
+.location-main {
+    margin: 2rem 0;
+}
+
+.location-main .location-group {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4rem;
+    align-items: center;
+    word-break: break-word;
+    height: 100%;
+}
+
+.location-main .location-group p {
+    line-height: 2rem;
+
+}
+
+.location-main .location-group .location-heading {
+    padding: 1em 0;
+}
+
+
+.form-group {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.form-group .label-form {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.form-group .label-form .icon,
+.form-group .label-form .label-text {
+    display: inline;
+    padding: 0 4px;
+}
+
+.form-group .form-control {
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px var(--text-color) solid;
+    font-family: var(--font);
+    margin: 1vh 1vh;
+    width: 90%;
+}
+
+.form-group .form-control::placeholder {
+    font-size: 1rem;
+}
+
+.form-check,
+.form-submit,
+.form-submitver2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    user-select: none;
+    align-items: center;
+}
+
+.form-submit .submit-login,
+.form-submit .submit-newAccount {
+    width: 16em;
+    height: 4em;
+    margin: 4em 0;
+}
+
+.form-submit .submit-login {
+    background-color: #ebebeb7d;
+}
+
+.form-submit .submit-newAccount {
+    background-color: #000;
+    color: var(--text-white);
+}
+
+.form-submit .submit-text {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: var(--font);
+}
+
+.form-submit .btn {
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form-submit .btn:hover {
+    background-color: #EA5F49;
+    scale: 1.1;
+    transition: all 0.5s ease-in-out;
+}
+
+/** BRAND */
+
+.brand-title{
+    text-align: center;
+}
+.brand-new {
+    line-height:4rem;
+}
+
+
+
+.brand-container .form-btn
+{
+    cursor: pointer;
+    font-size: 1rem;
+    width: 8rem;
+    border-radius: 30px;
+    height: 3rem;
+    text-align: center;
+    background-color: #2F2E2E;
+    color: var(--text-white);
+    font-family: var(--font-size);
+    border-style: unset;
+}
+.brand-container .form-group.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.form-group.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.form-group select {
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    padding: 0 10px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.form-btn
+{
+    cursor: pointer;
+    font-size: 1rem;
+    width: 8rem;
+    border-radius: 30px;
+    height: 3rem;
+    text-align: center;
+    background-color: #2F2E2E;
+    color: var(--text-white);
+    font-family: var(--font-size);
+    border-style: unset;
+}
+
+/** ADMIN */
+.admin-avartar img {
+    border-radius: 50%;
+    max-width: 50%;
+
+}
+.admin-group{
+    display: block;
+    margin: 3rem 0;
+}
+
+.admin-btn {
+    display: flex;
+    flex-direction: row-reverse;
+}
+

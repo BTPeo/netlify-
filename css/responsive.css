@@ -1,0 +1,231 @@
+/** PC */
+@media (min-width:1024px) {
+    .left-line {
+        border-left: 1px solid #000;
+    }
+
+    .right-line {
+        border-right: 1px #000 solid;
+    }
+
+    .introduction-row1,
+    .introduction-row2 {
+        display: flex;
+    }
+}
+
+/** Tablet */
+@media (min-width:740px) and (max-width:1023px) {
+    .nav {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+
+    /*todo Login.html*/
+
+    /*todo Index.html */
+
+    .product-container {
+        padding: 0 4rem;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        height: 700px;
+        color: var(--text-white);
+        grid-template-areas:
+            "collection collection collection collection"
+            "collection collection collection collection"
+            "male male female female"
+            "male male female female"
+            "couple couple couple couple"
+            "couple couple couple couple";
+    }
+
+    .collection {
+        grid-area: collection;
+    }
+
+    .collection-male {
+        grid-area: male;
+    }
+
+    .collection-female {
+        /* grid-column: 3/5; */
+        grid-area: female;
+    }
+
+    .collection-couple {
+        grid-area: couple;
+    }
+
+    .collection,
+    .collection-male,
+    .collection-female,
+    .collection-couple {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-origin: border-box;
+    }
+
+    .brand-container img {
+        width: 80%;
+    }
+
+    /*todo Introduction.html */
+
+    .introduction-row2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    /*todo vocher.html */
+
+
+    .sale-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .useVoucher:hover {
+        background-color: #2F2E2E;
+    }
+
+
+    .sale-container .sale-about {
+        text-align: center;
+        padding: 1em 0.5em 0;
+    }
+
+    .sale-container .sale-text {
+        font-size: 1em;
+        padding: 0.5rem;
+    }
+
+    button.useVoucher.btn {
+        width: 6em;
+        height: 2.5em;
+    }
+
+
+
+
+    /*todo Footer */
+    .footer-container .store-about  {
+        
+    }
+
+}
+
+/** Mobile */
+@media (max-width: 740px) {
+
+    /*todo Header menu */
+    .menuBtn {
+        display: inline-block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+
+
+    .menuToggle {
+        display: block;
+        position: relative;
+    }
+
+    .menuToggle .menuToggle-text {
+        padding: 0 10px;
+    }
+
+    .group-1 .header-search .search-input {
+        display: none;
+    }
+
+
+    /*todo Index.html */
+
+    .product-container {
+        padding: 0 0;
+        height: auto;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        color: var(--text-white);
+        grid-template-areas:
+            "collection collection collection collection"
+            "collection collection collection collection"
+            "male male female female"
+            "male male female female"
+            "couple couple couple couple"
+            "couple couple couple couple";
+    }
+
+    .collection {
+        grid-area: collection;
+        height: 600px;
+    }
+
+    .collection-male {
+        grid-area: male;
+    }
+
+    .collection-female {
+        /* grid-column: 3/5; */
+        grid-area: female;
+    }
+
+    .collection-couple {
+        grid-area: couple;
+    }
+
+    .collection,
+    .collection-male,
+    .collection-female,
+    .collection-couple {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-origin: border-box;
+    }
+
+    .collection-male,
+    .collection-female,
+    .collection-couple {
+        height: 300px;
+    }
+
+    .brand-container img {
+        width: 80%;
+    }
+
+    /*todo Introduction.html */
+    .introduction-row2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    /*todo product*/
+
+    /*todo vocher.html */
+
+    .l-12 {
+        padding: 1em 2em;
+    }
+
+    .sale-img {
+        background-size: auto;
+        text-align: center;
+    }
+
+    .useVoucher:hover {
+        background-color: #2F2E2E;
+    }
+
+}
